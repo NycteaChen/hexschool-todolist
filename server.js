@@ -73,22 +73,7 @@ const requestListener = (req, res) => {
   } else {
     responeHandler(res, 404);
   }
-
-  // switch (req.url) {
-  //   case "/todos":
-  //     switch (req.method) {
-  //       case "POST":
-  //         break;
-  //       case "OPTIONS":
-  //         break;
-  //       default:
-  //         break;
-  //     }
-  //     break;
-  //   default:
-  //     break;
-  // }
 };
 
 const server = http.createServer(requestListener);
-server.listen(3005);
+server.listen(process.env.PORT || 3005);
