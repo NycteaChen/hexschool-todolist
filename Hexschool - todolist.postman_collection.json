@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "a9915319-5c72-40c4-91b8-28cad054896e",
+		"name": "Hexschool - todolist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15125090"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hexschool-todolist.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"hexschool-todolist",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"title\": \"測試名稱123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hexschool-todolist.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"hexschool-todolist",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hexschool-todolist.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"hexschool-todolist",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hexschool-todolist.onrender.com/todos/",
+					"protocol": "https",
+					"host": [
+						"hexschool-todolist",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"修改內容 123124\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hexschool-todolist.onrender.com/todos/",
+					"protocol": "https",
+					"host": [
+						"hexschool-todolist",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
