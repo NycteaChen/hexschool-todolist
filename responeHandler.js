@@ -3,13 +3,13 @@ const codeMessageEnum = Object.freeze({
   404: "無此路由",
 });
 
-const responeHandler = (res, code, data) => {
+const responeHandler = (res, code, data, headerType = "application/json") => {
   const headers = {
     "Access-Control-Allow-Headers":
       "Content-Type, Authorization, Content-Length, X-Requested-With",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "PATCH, POST, GET,OPTIONS,DELETE",
-    "Content-Type": "application/json",
+    "Content-Type": headerType,
   };
   res.writeHead(code, headers);
 
